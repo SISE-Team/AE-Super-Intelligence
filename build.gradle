@@ -1,0 +1,137 @@
+import groovy.json.JsonSlurper
+import java.security.MessageDigest
+import java.util.zip.ZipFile
+
+plugins {
+    id 'java-library'
+}
+
+group = 'dev.aesi'
+version = mod_version
+base.archivesName = "AESI-${minecraft_version}"
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+    withSourcesJar()
+}
+
+// Compile against the exact installed APIs; no game or dependency JAR is bundled.
+def instanceSetting = providers.gradleProperty('aesiInstance')
+        .orElse(providers.environmentVariable('AESI_INSTANCE_DIR'))
+def instance = instanceSetting.isPresent() ? file(instanceSetting.get()) : file('../..')
+def pins = new JsonSlurper().parse(file('dependencies.lock.json'))
+def pinnedApis = pins.apis.collect { name, hash -> new File(instance, "mods/${name}") }
+def embeddedApis = layout.buildDirectory.dir('embedded-apis')
+def embeddedOwners = [
+        new File(instance, 'mods/enderio-9.0.6-alpha.jar'),
+        new File(instance, "libraries/net/neoforged/neoforge/${neoforge_version}/neoforge-${neoforge_version}-universal.jar")
+]
+
+def validateApis = tasks.register('validateApis') {
+    group = 'verification'
+    description = 'Check the installed compile APIs against dependencies.lock.json.'
+    inputs.file('dependencies.lock.json')
+    inputs.files(pinnedApis)
+    doLast {
+        if (!new File(instance, 'mods').isDirectory() || !new File(instance, 'libraries').isDirectory()) {
+            throw new GradleException('Set -PaesiInstance or AESI_INSTANCE_DIR to an installed Minecraft instance containing mods/ and libraries/.')
+        }
+        pins.apis.each { name, expected ->
+            def api = new File(instance, "mods/${name}")
+            if (!api.isFile()) {
+                throw new GradleException("Missing pinned API: ${name}")
+            }
+            def digest = MessageDigest.getInstance('SHA-256')
+            api.withInputStream { stream ->
+                byte[] buffer = new byte[65536]
+                int count
+                while ((count = stream.read(buffer)) != -1) {
+                    digest.update(buffer, 0, count)
+                }
+            }
+            if (digest.digest().encodeHex().toString() != expected) {
+                throw new GradleException("Pinned API checksum mismatch: ${name}")
+            }
+        }
+        if (!embeddedOwners.every { it.isFile() }) {
+            throw new GradleException('The installed instance must include the pinned Ender IO and NeoForge universal JARs.')
+        }
+    }
+}
+
+def extractEmbeddedApis = tasks.register('extractEmbeddedApis') {
+    dependsOn validateApis
+    inputs.files(embeddedOwners)
+    outputs.dir(embeddedApis)
+    doLast {
+        def destination = embeddedApis.get().asFile
+        destination.mkdirs()
+        embeddedOwners.each { owner ->
+            new ZipFile(owner).withCloseable { archive ->
+                archive.entries().each { entry ->
+                    if (!entry.directory && entry.name.startsWith('META-INF/jarjar/') && entry.name.endsWith('.jar')) {
+                        def target = new File(destination, new File(entry.name).name)
+                        archive.getInputStream(entry).withCloseable { input ->
+                            target.withOutputStream { output -> output << input }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+def installedClasspath = providers.provider {
+    def jars = (fileTree(new File(instance, 'libraries')) { include '**/*.jar' }.files
+            + fileTree(new File(instance, 'mods')) { include '*.jar'; exclude 'AESI-*.jar' }.files
+            + fileTree(embeddedApis) { include '*.jar' }.files).toList()
+    jars.sort { left, right ->
+        def leftPriority = left.path.contains('minecraft-client-patched') ? 0 : 1
+        def rightPriority = right.path.contains('minecraft-client-patched') ? 0 : 1
+        (leftPriority <=> rightPriority) ?: (left.path <=> right.path)
+    }
+}
+
+dependencies {
+    compileOnly files(installedClasspath).builtBy(extractEmbeddedApis)
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 25
+    options.debugOptions.debugLevel = 'lines,source'
+    options.compilerArgs.add('-proc:none')
+}
+
+tasks.register('plannerTest', JavaExec) {
+    group = 'verification'
+    description = 'Run the standalone planner assertions and independent small-graph oracle.'
+    dependsOn testClasses
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(25) }
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'dev.aesi.planner.PlannerTests'
+}
+
+tasks.named('check') {
+    dependsOn 'plannerTest'
+}
+
+// The test source has a standalone main entry point rather than a JUnit runner.
+tasks.named('test') {
+    dependsOn 'plannerTest'
+    enabled = false
+}
+
+tasks.withType(AbstractArchiveTask).configureEach {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+
+tasks.named('jar') {
+    from('LICENSE') { into 'META-INF/licenses/aesi' }
+    duplicatesStrategy = DuplicatesStrategy.FAIL
+}
+
+tasks.named('sourcesJar') {
+    from 'LICENSE'
+}

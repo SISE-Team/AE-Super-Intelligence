@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.aesi.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "PatternProviderMixin",
+    "NetworkInventoryMixin",
+    "CraftingCalculationMixin",
+    "CraftingTreeMixin",
+    "FrozenCraftingPatternMixin",
+    "AdvancedProviderMixin",
+    "AddonProviderMixin",
+    "OverloadedReturnBufferMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

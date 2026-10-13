@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "ae2:blank_pattern",
+    "ae2:logic_processor"
+  ],
+  "result": {
+    "id": "aesi:smart_pattern",
+    "count": 1
+  }
+}

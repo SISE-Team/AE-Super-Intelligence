@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "aesi:block/smart_controller"
+    }
+  }
+}

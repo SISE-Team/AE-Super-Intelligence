@@ -1,0 +1,14 @@
+{
+  "block.aesi.smart_controller": "Smart Crafting Controller",
+  "item.aesi.smart_pattern": "Smart Pattern",
+  "message.aesi.strategy": "Strategy: %s",
+  "message.aesi.encoded": "Smart pattern target: %s",
+  "message.aesi.sample": "Hold the target item in your other hand and use the pattern.",
+  "tooltip.aesi.blank": "Hold a target in your other hand; use to encode",
+  "tooltip.aesi.target": "Target: %s",
+  "tooltip.aesi.strategy": "Strategy: %s (Shift + use to cycle)",
+  "tooltip.aesi.native": "Insert in a smart controller; order in an ME crafting terminal",
+  "strategy.aesi.balanced": "Balanced",
+  "strategy.aesi.speed": "Speed first",
+  "strategy.aesi.materials": "Materials first"
+}

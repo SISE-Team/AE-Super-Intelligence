@@ -1,0 +1,14 @@
+{
+  "block.aesi.smart_controller": "智能合成控制器",
+  "item.aesi.smart_pattern": "智能样板",
+  "message.aesi.strategy": "合成策略：%s",
+  "message.aesi.encoded": "智能样板目标：%s",
+  "message.aesi.sample": "另一只手持有目标物品，右键记录目标。",
+  "tooltip.aesi.blank": "空白：另一只手持目标物品，右键编码",
+  "tooltip.aesi.target": "目标：%s",
+  "tooltip.aesi.strategy": "策略：%s（Shift + 右键切换）",
+  "tooltip.aesi.native": "放入智能合成控制器，从 ME 合成终端下单",
+  "strategy.aesi.balanced": "均衡",
+  "strategy.aesi.speed": "速度优先",
+  "strategy.aesi.materials": "节材优先"
+}

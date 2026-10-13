@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "PCP",
+    "IPI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "ae2:calculation_processor",
+    "C": "ae2:pattern_provider"
+  },
+  "result": {
+    "id": "aesi:smart_controller",
+    "count": 1
+  }
+}

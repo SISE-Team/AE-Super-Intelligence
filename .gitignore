@@ -1,0 +1,28 @@
+build/
+.gradle/
+run/
+__pycache__/
+*.log
+
+# Local development tools and documents are not part of the public repository.
+/tool/
+/tools/
+*.py
+*.pyc
+*.pyo
+/docs/
+/verification/
+/src/verification/
+AGENTS.md
+
+# Local runtime and dependency data.
+/mods/
+/libraries/
+/natives/
+/local.properties
+.idea/
+.vscode/
+*.iml
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar

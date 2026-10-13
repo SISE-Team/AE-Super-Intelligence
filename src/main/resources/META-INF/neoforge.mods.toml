@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[10,)"
+license="MIT"
+[[mods]]
+modId="aesi"
+version="0.2.0-beta"
+displayName="AE Super Intelligence"
+authors="AESI contributors"
+description="Machine-aware intelligent patterns using native AE2 terminals and crafting CPUs."
+[[mixins]]
+config="aesi.mixins.json"
+[[dependencies.aesi]]
+modId="minecraft"
+type="required"
+versionRange="[26.1.2]"
+side="BOTH"
+[[dependencies.aesi]]
+modId="neoforge"
+type="required"
+versionRange="[26.1.2.114,26.2)"
+side="BOTH"
+[[dependencies.aesi]]
+modId="ae2"
+type="required"
+versionRange="[26.1.13-beta]"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.aesi]]
+modId="modern_industrialization"
+type="optional"
+versionRange="[2.5.0-viking602.3]"
+ordering="AFTER"
+side="BOTH"
