@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_mi_coke_oven",
+    "aesi:dataset_mi_implosion_compressor",
+    "aesi:dataset_mi_quarry",
+    "aesi:dataset_mi_vacuum_freezer",
+    "aesi:dataset_mi_heat_exchanger",
+    "modern_industrialization:digital_circuit"
+  ],
+  "result": {
+    "id": "aesi:dataset_mi_advanced_group_2_unwritten"
+  }
+}

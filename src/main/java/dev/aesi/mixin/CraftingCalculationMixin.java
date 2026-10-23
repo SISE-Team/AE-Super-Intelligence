@@ -28,6 +28,7 @@ public abstract class CraftingCalculationMixin implements TaskPlanAccess {
     @Unique private NetworkRuntime.Bundle aesiBundle;
     @Unique private IGrid aesiGrid;
     @Unique private Map<AEKey, IPatternDetails> aesiRoutes = Map.of();
+    @Unique private Set<AEItemKey> aesiAuthorized = Set.of();
 
     @Inject(method = "<init>", at = @At("TAIL"))
     private void aesiSnapshot(
@@ -38,6 +39,8 @@ public abstract class CraftingCalculationMixin implements TaskPlanAccess {
             CalculationStrategy strategy,
             CallbackInfo ci) {
         aesiBundle = NetworkRuntime.snapshot(grid);
+        aesiAuthorized = aesiBundle.patterns().values().stream().map(IPatternDetails::getDefinition)
+                .collect(java.util.stream.Collectors.toUnmodifiableSet());
         aesiGrid = grid;
     }
 
@@ -82,6 +85,10 @@ public abstract class CraftingCalculationMixin implements TaskPlanAccess {
 
     public Collection<IPatternDetails> aesiSelect(
             AEKey key, Collection<IPatternDetails> candidates) {
+        // AE's crafting-provider index can lag a card removal by one tick. A fresh job may only
+        // use virtual definitions that were authorized in its immutable controller snapshot.
+        candidates=candidates.stream().filter(p->!dev.aesi.recipe.VirtualPatterns.isVirtual(p)
+                ||aesiAuthorized.contains(p.getDefinition())).toList();
         var selected = aesiRoutes.get(key);
         if (selected == null) return candidates;
         var exact =

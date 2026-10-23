@@ -43,7 +43,9 @@ public final class NetworkRuntime {
         var recipes = new LinkedHashMap<String, Recipe<AEKey>>();
         var patterns = new LinkedHashMap<String, IPatternDetails>();
         var goals = new LinkedHashMap<AEKey, Strategy>();
-        CONTROLLERS.values().stream()
+        CONTROLLERS.entrySet().stream()
+                .filter(e -> e.getKey().operational())
+                .map(Map.Entry::getValue)
                 .filter(p -> p.grid() == grid)
                 .sorted(
                         Comparator.comparingInt(Published::priority)
@@ -74,6 +76,9 @@ public final class NetworkRuntime {
 
     public static synchronized void noteDecision(
             IGrid grid, AEKey output, long amount, Planner.Result<AEKey> result) {
+        CONTROLLERS.forEach((owner,published)->{
+            if(published.grid()==grid && published.bundle().goals().containsKey(output))owner.notePlanning();
+        });
         var lines = new ArrayList<String>();
         lines.add(
                 "Target "

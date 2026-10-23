@@ -1,0 +1,2924 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "formed": "false",
+        "facing": "north"
+      },
+      "apply": {
+        "model": "aesi:block/network_port",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "0"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_0",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "0"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_0",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "1"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_1",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "1"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_1",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "2"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_2",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "2"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_2",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "3"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_3",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "3"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_3",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "4"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_4",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "4"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_4",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "5"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_5",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "5"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_5",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "6"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_6",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "6"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_6",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "7"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_7",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "7"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_7",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "8"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_8",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "8"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_8",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "9"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_9",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "9"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_9",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "10"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_10",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "10"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_10",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "11"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_11",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "11"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_11",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "12"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_12",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "12"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_12",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "13"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_13",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "13"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_13",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "14"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_14",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "14"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_14",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "15"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_15",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "15"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_15",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "16"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_16",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "16"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "17"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_17",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "17"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "18"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_18",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "18"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "19"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_19",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "19"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "20"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_20",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "20"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "21"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_21",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "21"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "22"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_22",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "22"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "23"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_23",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "23"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "24"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_24",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "24"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "25"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_25",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "25"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "26"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_26",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "26"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "27"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_27",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "27"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "28"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_28",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "28"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "north",
+        "segment": "29"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_29",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "north",
+        "segment": "29"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "formed": "false",
+        "facing": "east"
+      },
+      "apply": {
+        "model": "aesi:block/network_port",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "0"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "0"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "1"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "1"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "2"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_2",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "2"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_2",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "3"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_3",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "3"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_3",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "4"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_4",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "4"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_4",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "5"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_5",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "5"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_5",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "6"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_6",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "6"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_6",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "7"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_7",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "7"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_7",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "8"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_8",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "8"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_8",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "9"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_9",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "9"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_9",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "10"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_10",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "10"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_10",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "11"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_11",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "11"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_11",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "12"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_12",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "12"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_12",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "13"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_13",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "13"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_13",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "14"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_14",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "14"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_14",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "15"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_15",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "15"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_15",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "16"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_16",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "16"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "17"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_17",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "17"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "18"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_18",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "18"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "19"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_19",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "19"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "20"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_20",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "20"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "21"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_21",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "21"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "22"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_22",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "22"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "23"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_23",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "23"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "24"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_24",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "24"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "25"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_25",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "25"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "26"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_26",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "26"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "27"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_27",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "27"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "28"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_28",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "28"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "east",
+        "segment": "29"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_29",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "east",
+        "segment": "29"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "formed": "false",
+        "facing": "south"
+      },
+      "apply": {
+        "model": "aesi:block/network_port",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "0"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "0"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "1"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "1"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "2"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_2",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "2"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_2",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "3"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_3",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "3"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_3",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "4"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_4",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "4"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_4",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "5"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_5",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "5"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_5",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "6"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_6",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "6"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_6",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "7"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_7",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "7"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_7",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "8"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_8",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "8"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_8",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "9"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_9",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "9"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_9",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "10"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_10",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "10"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_10",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "11"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_11",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "11"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_11",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "12"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_12",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "12"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_12",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "13"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_13",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "13"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_13",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "14"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_14",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "14"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_14",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "15"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_15",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "15"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_15",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "16"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_16",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "16"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "17"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_17",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "17"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "18"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_18",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "18"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "19"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_19",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "19"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "20"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_20",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "20"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "21"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_21",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "21"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "22"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_22",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "22"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "23"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_23",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "23"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "24"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_24",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "24"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "25"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_25",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "25"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "26"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_26",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "26"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "27"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_27",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "27"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "28"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_28",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "28"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "south",
+        "segment": "29"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_29",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "south",
+        "segment": "29"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "formed": "false",
+        "facing": "west"
+      },
+      "apply": {
+        "model": "aesi:block/network_port",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "0"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "0"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "1"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "1"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "2"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_2",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "2"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_2",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "3"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_3",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "3"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_3",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "4"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_4",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "4"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_4",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "5"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_5",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "5"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_5",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "6"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_6",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "6"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_6",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "7"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_7",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "7"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_7",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "8"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_8",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "8"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_8",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "9"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_9",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "9"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_9",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "10"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_10",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "10"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_10",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "11"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_11",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "11"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_11",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "12"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_12",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "12"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_12",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "13"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_13",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "13"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_13",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "14"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_14",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "14"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_14",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "15"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_15",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "15"
+      },
+      "apply": {
+        "model": "aesi:block/rack/segment_15",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "16"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_16",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "16"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "17"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_17",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "17"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "18"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_18",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "18"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "19"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_19",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "19"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "20"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_20",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "20"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "21"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_21",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "21"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "22"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_22",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "22"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "23"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_23",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "23"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "24"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_24",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "24"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "25"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_25",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "25"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "26"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_26",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "26"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "27"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_27",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "27"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "28"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_28",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "28"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "false",
+        "facing": "west",
+        "segment": "29"
+      },
+      "apply": {
+        "model": "aesi:block/rack/legacy/segment_29",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "formed": "true",
+        "tall": "true",
+        "facing": "west",
+        "segment": "29"
+      },
+      "apply": {
+        "model": "aesi:block/structural_casing",
+        "y": 270
+      }
+    }
+  ]
+}

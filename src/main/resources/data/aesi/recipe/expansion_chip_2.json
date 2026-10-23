@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BAB",
+    "APA",
+    "BAB"
+  ],
+  "key": {
+    "P": "ae2:logic_processor",
+    "A": "minecraft:redstone",
+    "B": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "aesi:expansion_chip_2",
+    "count": 1
+  }
+}

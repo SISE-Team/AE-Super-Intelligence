@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "oritech:processing_unit",
+    "oritech:steel_ingot",
+    "minecraft:ice",
+    "oritech:industrial_chiller"
+  ],
+  "result": {
+    "id": "aesi:dataset_ori_industrial_chiller_unwritten"
+  }
+}

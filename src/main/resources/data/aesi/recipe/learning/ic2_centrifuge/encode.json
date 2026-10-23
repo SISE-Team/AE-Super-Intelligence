@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ic2"
+    }
+  ],
+  "type": "ic2:centrifuge",
+  "ingredient": {
+    "item": "aesi:dataset_ic2_centrifuge_unwritten"
+  },
+  "result": {
+    "item": "aesi:dataset_ic2_centrifuge"
+  },
+  "minHeat": 1000
+}

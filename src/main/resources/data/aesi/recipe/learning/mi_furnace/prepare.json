@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_minecraft_smelting",
+    "modern_industrialization:electric_furnace"
+  ],
+  "result": {
+    "id": "aesi:dataset_mi_furnace_unwritten"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:nucleosynthesizing",
+  "item_input": {
+    "ingredient": "aesi:dataset_mek_complete_suite_unwritten",
+    "count": 1
+  },
+  "chemical_input": {
+    "chemical": "mekanism:antimatter",
+    "amount": 100
+  },
+  "output": {
+    "id": "aesi:dataset_mek_complete_suite"
+  },
+  "per_tick_usage": false,
+  "duration": 1000
+}

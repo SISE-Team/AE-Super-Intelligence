@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_transmute",
+  "category": "misc",
+  "input": "aesi:pattern_drive_1",
+  "material": "aesi:expansion_chip_2",
+  "result": {
+    "id": "aesi:pattern_drive_2"
+  }
+}

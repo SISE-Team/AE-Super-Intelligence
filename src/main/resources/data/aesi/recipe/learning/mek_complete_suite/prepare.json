@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_mek_basic_suite",
+    "aesi:dataset_mek_process_group_1",
+    "aesi:dataset_mek_process_group_2",
+    "aesi:dataset_mek_process_group_3",
+    "aesi:dataset_mek_process_group_4",
+    "mekanism:ultimate_control_circuit"
+  ],
+  "result": {
+    "id": "aesi:dataset_mek_complete_suite_unwritten"
+  }
+}

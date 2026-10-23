@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_ae2_assembly",
+    "aesi:dataset_minecraft_suite",
+    "ae2:logic_processor"
+  ],
+  "result": {
+    "id": "aesi:dataset_ae2_foundation_suite_unwritten"
+  }
+}

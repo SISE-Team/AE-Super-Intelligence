@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "industrialforegoing:plastic",
+    "industrialforegoing:machine_frame_simple"
+  ],
+  "result": {
+    "id": "aesi:dataset_if_dissolution_unwritten"
+  }
+}

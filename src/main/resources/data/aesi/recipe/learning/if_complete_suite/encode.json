@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:dissolution_chamber",
+  "input": [
+    "aesi:dataset_if_complete_suite_unwritten",
+    "industrialforegoing:plastic",
+    "ae2:calculation_processor"
+  ],
+  "inputFluid": {
+    "ingredient": "industrialforegoing:ether_gas",
+    "amount": 1000
+  },
+  "output": {
+    "id": "aesi:dataset_if_complete_suite",
+    "count": 1
+  },
+  "processingTime": 400
+}

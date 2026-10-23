@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "PCP",
+    "IGI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "ae2:logic_processor",
+    "C": "aesi:structural_casing",
+    "G": "minecraft:glass"
+  },
+  "result": {
+    "id": "aesi:compute_server",
+    "count": 1
+  }
+}

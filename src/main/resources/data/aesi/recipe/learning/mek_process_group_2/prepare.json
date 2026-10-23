@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_mek_chemical_infusing",
+    "aesi:dataset_mek_oxidizing",
+    "aesi:dataset_mek_washing",
+    "aesi:dataset_mek_dissolution",
+    "aesi:dataset_mek_centrifuging",
+    "mekanism:elite_control_circuit"
+  ],
+  "result": {
+    "id": "aesi:dataset_mek_process_group_2_unwritten"
+  }
+}

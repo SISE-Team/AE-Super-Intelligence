@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ic2"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_ic2_macerator",
+    "aesi:dataset_ic2_extractor",
+    "aesi:dataset_ic2_compressor",
+    "aesi:dataset_ic2_centrifuge",
+    "aesi:dataset_ic2_ore_washer",
+    "ic2:circuit"
+  ],
+  "result": {
+    "id": "aesi:dataset_ic2_process_group_1_unwritten"
+  }
+}

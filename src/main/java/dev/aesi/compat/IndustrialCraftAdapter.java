@@ -7,9 +7,10 @@ import dev.aesi.api.*;
 import dev.aesi.bridge.OutputRecovery;
 import dev.aesi.recipe.*;
 
-import ic2.api.recipe.IRecipeInput;
-import ic2.core.block.machine.tileentity.*;
-import ic2.core.ref.Ic2RecipeTypes;
+import ic2ce.api.recipe.IRecipeInput;
+import ic2ce.neoforge.processing.solid.*;
+import ic2ce.neoforge.processing.PoweredProcessor;
+import ic2ce.neoforge.registry.RecipeKinds;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -25,21 +26,21 @@ import java.util.*;
 public final class IndustrialCraftAdapter implements RecipeAdapter, MachineAdapter {
     private static final Set<RecipeType<?>> TYPES =
             Set.of(
-                    Ic2RecipeTypes.MACERATOR,
-                    Ic2RecipeTypes.EXTRACTOR,
-                    Ic2RecipeTypes.COMPRESSOR,
-                    Ic2RecipeTypes.CENTRIFUGE,
-                    Ic2RecipeTypes.ORE_WASHER,
-                    Ic2RecipeTypes.METAL_FORMER_CUTTING,
-                    Ic2RecipeTypes.METAL_FORMER_EXTRUDING,
-                    Ic2RecipeTypes.METAL_FORMER_ROLLING);
+                    RecipeKinds.MACERATOR,
+                    RecipeKinds.EXTRACTOR,
+                    RecipeKinds.COMPRESSOR,
+                    RecipeKinds.CENTRIFUGE,
+                    RecipeKinds.ORE_WASHER,
+                    RecipeKinds.METAL_FORMER_CUTTING,
+                    RecipeKinds.METAL_FORMER_EXTRUDING,
+                    RecipeKinds.METAL_FORMER_ROLLING);
 
     public void read(ServerLevel level, List<Blueprint> output, Map<String, String> unsupported) {
         for (var holder : level.getServer().getRecipeManager().getRecipes())
-            if (holder.value() instanceof ic2.core.recipe.v2.RecipeHolder<?, ?> wrapper) {
+            if (holder.value() instanceof ic2ce.neoforge.recipe.codec.RecipeHolder<?, ?> wrapper) {
                 String id = holder.id().identifier().toString();
                 try {
-                    if (wrapper.recipe() instanceof ic2.api.recipe.MachineRecipeWeighted<?>)
+                    if (wrapper.recipe() instanceof ic2ce.api.recipe.MachineRecipeWeighted<?>)
                         throw new IllegalArgumentException("weighted random output");
                     if (!TYPES.contains(wrapper.type())
                             || !(wrapper.recipe().getInput() instanceof IRecipeInput input)
@@ -61,7 +62,7 @@ public final class IndustrialCraftAdapter implements RecipeAdapter, MachineAdapt
                                     .toList();
                     var ingredients = new ArrayList<List<GenericStack>>();
                     ingredients.add(choices);
-                    if (wrapper.type() == Ic2RecipeTypes.ORE_WASHER) {
+                    if (wrapper.type() == RecipeKinds.ORE_WASHER) {
                         var meta = wrapper.recipe().getMetaData();
                         if (meta == null || meta.getIntOr("amount", 0) <= 0)
                             throw new IllegalArgumentException("missing water demand");
@@ -92,16 +93,16 @@ public final class IndustrialCraftAdapter implements RecipeAdapter, MachineAdapt
     }
 
     private static RecipeType<?> type(BlockEntity machine) {
-        if (machine instanceof TileEntityMacerator) return Ic2RecipeTypes.MACERATOR;
-        if (machine instanceof TileEntityExtractor) return Ic2RecipeTypes.EXTRACTOR;
-        if (machine instanceof TileEntityCompressor) return Ic2RecipeTypes.COMPRESSOR;
-        if (machine instanceof TileEntityCentrifuge) return Ic2RecipeTypes.CENTRIFUGE;
-        if (machine instanceof TileEntityOreWashing) return Ic2RecipeTypes.ORE_WASHER;
-        if (machine instanceof TileEntityMetalFormer m)
+        if (machine instanceof OreGrinder) return RecipeKinds.MACERATOR;
+        if (machine instanceof MaterialExtractor) return RecipeKinds.EXTRACTOR;
+        if (machine instanceof PressureCompressor) return RecipeKinds.COMPRESSOR;
+        if (machine instanceof ThermalCentrifuge) return RecipeKinds.CENTRIFUGE;
+        if (machine instanceof OreWasher) return RecipeKinds.ORE_WASHER;
+        if (machine instanceof MetalFormer m)
             return switch (m.getMode()) {
-                case 0 -> Ic2RecipeTypes.METAL_FORMER_EXTRUDING;
-                case 1 -> Ic2RecipeTypes.METAL_FORMER_ROLLING;
-                case 2 -> Ic2RecipeTypes.METAL_FORMER_CUTTING;
+                case 0 -> RecipeKinds.METAL_FORMER_EXTRUDING;
+                case 1 -> RecipeKinds.METAL_FORMER_ROLLING;
+                case 2 -> RecipeKinds.METAL_FORMER_CUTTING;
                 default -> null;
             };
         return null;
@@ -127,7 +128,7 @@ public final class IndustrialCraftAdapter implements RecipeAdapter, MachineAdapt
         for (var holder : level.getServer().getRecipeManager().getRecipes()) {
             if (holder.id().identifier().toString().equals(blueprint.id())
                     || holder.value().getType() != type) continue;
-            if (holder.value() instanceof ic2.core.recipe.v2.RecipeHolder<?, ?> r
+            if (holder.value() instanceof ic2ce.neoforge.recipe.codec.RecipeHolder<?, ?> r
                     && r.recipe().getInput() instanceof IRecipeInput input
                     && InputMatcher.matches(
                             supply,
@@ -142,14 +143,14 @@ public final class IndustrialCraftAdapter implements RecipeAdapter, MachineAdapt
     }
 
     public boolean ready(BlockEntity machine, Blueprint blueprint) {
-        var m = (TileEntityStandardMachine<?, ?, ?>) machine;
+        var m = (PoweredProcessor<?, ?, ?>) machine;
         if (m.inputSlot == null
                 || !m.inputSlot.isEmpty()
-                || !m.getComponent(ic2.core.block.comp.Energy.class).canUseEnergy(m.energyConsume))
+                || !m.getComponent(ic2ce.neoforge.component.ElectricalBuffer.class).canUseEnergy(m.energyConsume))
             return false;
-        if (m instanceof TileEntityCentrifuge centrifuge) {
+        if (m instanceof ThermalCentrifuge centrifuge) {
             var original =
-                    ((ic2.core.recipe.v2.RecipeHolder<?, ?>)
+                    ((ic2ce.neoforge.recipe.codec.RecipeHolder<?, ?>)
                                     ((ServerLevel) m.getLevel())
                                             .getServer()
                                             .getRecipeManager()
@@ -163,7 +164,7 @@ public final class IndustrialCraftAdapter implements RecipeAdapter, MachineAdapt
                                             .value())
                             .recipe();
             if (original.getMetaData() == null
-                    || original.getMetaData().getIntOr("minHeat", 0) > TileEntityCentrifuge.maxHeat)
+                    || original.getMetaData().getIntOr("minHeat", 0) > ThermalCentrifuge.maxHeat)
                 return false;
         }
         var items =
@@ -179,7 +180,7 @@ public final class IndustrialCraftAdapter implements RecipeAdapter, MachineAdapt
     }
 
     public List<OutputRecovery.Port> outputs(BlockEntity machine) {
-        if (type(machine) == null || !(machine instanceof TileEntityStandardMachine<?, ?, ?> m))
+        if (type(machine) == null || !(machine instanceof PoweredProcessor<?, ?, ?> m))
             return List.of();
         var handler =
                 m.getLevel()

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "minecraft:blast_furnace",
+    "ae2:certus_quartz_crystal"
+  ],
+  "result": {
+    "id": "aesi:dataset_minecraft_blasting_unwritten"
+  }
+}

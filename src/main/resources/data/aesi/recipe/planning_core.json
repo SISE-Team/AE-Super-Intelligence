@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GPG",
+    "PCP",
+    "GPG"
+  ],
+  "key": {
+    "G": "minecraft:glass",
+    "P": "ae2:calculation_processor",
+    "C": "ae2:engineering_processor"
+  },
+  "result": {
+    "id": "aesi:planning_core",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "aesi:item/strategy_array",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -7623751
+      }
+    ]
+  }
+}

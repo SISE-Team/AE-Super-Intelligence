@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "FPF",
+    "ICI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "ae2:fluix_crystal",
+    "F": "minecraft:redstone",
+    "P": "ae2:logic_processor"
+  },
+  "result": {
+    "id": "aesi:network_port",
+    "count": 1
+  }
+}

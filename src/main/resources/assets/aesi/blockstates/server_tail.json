@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "compute=true,facing=north": {
+      "model": "aesi:block/compute_server_rear",
+      "y": 0
+    },
+    "compute=false,facing=north": {
+      "model": "aesi:block/disk_array_rear",
+      "y": 0
+    },
+    "compute=true,facing=east": {
+      "model": "aesi:block/compute_server_rear",
+      "y": 90
+    },
+    "compute=false,facing=east": {
+      "model": "aesi:block/disk_array_rear",
+      "y": 90
+    },
+    "compute=true,facing=south": {
+      "model": "aesi:block/compute_server_rear",
+      "y": 180
+    },
+    "compute=false,facing=south": {
+      "model": "aesi:block/disk_array_rear",
+      "y": 180
+    },
+    "compute=true,facing=west": {
+      "model": "aesi:block/compute_server_rear",
+      "y": 270
+    },
+    "compute=false,facing=west": {
+      "model": "aesi:block/disk_array_rear",
+      "y": 270
+    }
+  }
+}

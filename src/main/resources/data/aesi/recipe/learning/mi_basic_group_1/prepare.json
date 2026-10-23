@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_mi_compressor",
+    "aesi:dataset_mi_macerator",
+    "aesi:dataset_mi_wiremill",
+    "aesi:dataset_mi_cutting_machine",
+    "aesi:dataset_mi_mixer",
+    "modern_industrialization:electronic_circuit"
+  ],
+  "result": {
+    "id": "aesi:dataset_mi_basic_group_1_unwritten"
+  }
+}

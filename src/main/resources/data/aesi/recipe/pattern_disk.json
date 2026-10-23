@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "PBP",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "ae2:calculation_processor",
+    "P": "ae2:logic_processor",
+    "B": "ae2:blank_pattern",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "aesi:pattern_disk",
+    "count": 1
+  }
+}

@@ -113,7 +113,17 @@ tasks.register('plannerTest', JavaExec) {
 }
 
 tasks.named('check') {
-    dependsOn 'plannerTest'
+    dependsOn 'plannerTest', 'driveTierTest', 'moduleAccessTest'
+}
+
+['driveTierTest': 'dev.aesi.item.DriveTierTests', 'moduleAccessTest': 'dev.aesi.planner.ModuleAccessTests'].each { taskName, entry ->
+    tasks.register(taskName, JavaExec) {
+        group = 'verification'
+        dependsOn testClasses
+        javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(25) }
+        classpath = sourceSets.test.runtimeClasspath
+        mainClass = entry
+    }
 }
 
 // The test source has a standalone main entry point rather than a JUnit runner.

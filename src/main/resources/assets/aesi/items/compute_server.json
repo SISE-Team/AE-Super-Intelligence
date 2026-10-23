@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "aesi:item/compute_server",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -7623751
+      }
+    ]
+  }
+}

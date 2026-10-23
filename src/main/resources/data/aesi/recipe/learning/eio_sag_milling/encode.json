@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "enderio:sag_milling",
+  "energy": 12000,
+  "input": "aesi:dataset_eio_sag_milling_unwritten",
+  "outputs": [
+    {
+      "item": {
+        "id": "aesi:dataset_eio_sag_milling"
+      },
+      "chance": 1.0
+    }
+  ],
+  "bonus": "none"
+}

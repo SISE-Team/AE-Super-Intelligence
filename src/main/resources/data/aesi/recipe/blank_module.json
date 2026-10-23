@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IPI",
+    "QGQ",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "ae2:engineering_processor",
+    "Q": "ae2:certus_quartz_crystal",
+    "G": "ae2:quartz_glass",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "aesi:blank_module",
+    "count": 1
+  }
+}

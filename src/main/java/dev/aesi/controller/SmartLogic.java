@@ -19,6 +19,16 @@ import net.minecraft.server.level.ServerLevel;
 import java.util.*;
 
 public final class SmartLogic extends PatternProviderLogic {
+    public static final int BASE_CAPACITY = 9, DISK_SLOTS = 16, ARRAY_SLOTS = 6,
+            MAX_CAPACITY = BASE_CAPACITY + ARRAY_SLOTS * dev.aesi.multiblock.DiskArrayEntity.MAX_CAPACITY;
+    private final PatternDiskInventory disks;
+    private final MountedArrayInventory arrays;
+    private final ComputeInventory compute;
+    private Set<String> lastModules = Set.of();
+    private Set<String> missingModules = Set.of();
+    private volatile boolean planningPulse;
+    private long planningUntil, workingUntil;
+    private String lastBays = "";
     private final IManagedGridNode node;
     private final PatternProviderLogicHost owner;
     private volatile List<IPatternDetails> offered = List.of();
@@ -31,10 +41,10 @@ public final class SmartLogic extends PatternProviderLogic {
     private final Set<AEKey> rememberedComponents = new LinkedHashSet<>();
 
     public SmartLogic(IManagedGridNode node, PatternProviderLogicHost owner) {
-        super(node, owner);
+        super(node, owner, BASE_CAPACITY);
         this.node = node;
         this.owner = owner;
-        ((appeng.util.inv.AppEngInternalInventory) getPatternInv())
+        ((appeng.util.inv.AppEngInternalInventory) super.getPatternInv())
                 .setFilter(
                         new appeng.util.inv.filter.IAEItemFilter() {
                             @Override
@@ -45,6 +55,56 @@ public final class SmartLogic extends PatternProviderLogic {
                                 return stack.getItem() instanceof SmartPatternItem;
                             }
                         });
+        disks = new PatternDiskInventory(this, super.getPatternInv());
+        arrays = new MountedArrayInventory((SmartController)owner.getBlockEntity(),super.getPatternInv());
+        compute = new ComputeInventory((SmartController)owner.getBlockEntity());
+    }
+
+    public ComputeInventory computeInventory() { return compute; }
+    public Set<String> installedModules() { return compute.modules(); }
+    public Set<String> missingModules() { return missingModules; }
+    public void modulesChanged() { structureChanged(); }
+    public void notePlanning() { planningPulse = true; }
+    public int runtimeMode() {
+        if (!operational()) return 0;
+        long now=owner.getBlockEntity().getLevel().getGameTime();
+        if(now<workingUntil)return 3;
+        if(now<planningUntil)return 2;
+        return missingModules.isEmpty()||!offered.isEmpty()?1:4;
+    }
+
+    public appeng.util.inv.AppEngInternalInventory diskInventory() { return disks.drives(); }
+    public int diskMask() { return arrays == null ? 0 : arrays.mask(); }
+    public int diskCount() { return Integer.bitCount(diskMask()); }
+    /** Usable slots: the base nine plus the drive capacity of each mounted array. */
+    public int patternCapacity() {
+        int sum = BASE_CAPACITY;
+        if (arrays != null) for (int bay = 0; bay < ARRAY_SLOTS; bay++) sum += arrays.capacity(bay);
+        return sum;
+    }
+    /** Capacity of the array mounted in a bay, 0 when absent or without drives. */
+    public int bayCapacity(int bay) { return arrays == null ? 0 : arrays.capacity(bay); }
+    /** First controller slot of a bay; bays have a fixed stride so indices never shift. */
+    public static int bayStart(int bay) { return BASE_CAPACITY + bay * dev.aesi.multiblock.DiskArrayEntity.MAX_CAPACITY; }
+    /** 24 characters, four per bay: '-' for an absent bay, else each drive slot's tier digit. */
+    public String bayTiers() { return arrays == null ? "-".repeat(ARRAY_SLOTS * dev.aesi.multiblock.DiskArrayEntity.DRIVE_SLOTS) : arrays.tiers(); }
+    @Override public appeng.api.inventories.InternalInventory getPatternInv() {
+        return arrays == null ? super.getPatternInv() : arrays.patterns();
+    }
+
+    @Override public void onChangeInventory(appeng.util.inv.AppEngInternalInventory inv, int slot) {
+        super.onChangeInventory(inv, slot);
+        dirty = true;
+    }
+
+    @Override public void addDrops(List<net.minecraft.world.item.ItemStack> drops) {
+        super.addDrops(drops);
+        for (var stack : disks.drives()) drops.add(stack.copy());
+    }
+
+    @Override public void clearContent() {
+        super.clearContent();
+        disks.drives().clear();
     }
 
     @Override
@@ -56,13 +116,32 @@ public final class SmartLogic extends PatternProviderLogic {
         dirty = true;
     }
 
+    public boolean operational() {
+        return owner != null && owner.getBlockEntity() instanceof SmartController controller
+                && controller.networkReady();
+    }
+
+    public void structureChanged() {
+        dirty = true;
+        NetworkRuntime.remove(this);
+        if (offered != null && !offered.isEmpty()) {
+            offered = List.of();
+            ICraftingProvider.requestUpdate(node);
+        }
+    }
+
     public List<String> diagnostics() {
         return diagnostics;
     }
 
     public void tick() {
         if (!(owner.getBlockEntity().getLevel() instanceof ServerLevel level)) return;
-        if (!node.isActive()) {
+        if(planningPulse){planningUntil=level.getGameTime()+40;planningPulse=false;}
+        var modules=installedModules();
+        if(!lastModules.equals(modules)){lastModules=modules;modulesChanged();}
+        var bays=bayTiers();
+        if(!lastBays.equals(bays)){lastBays=bays;structureChanged();}
+        if (!operational()) {
             NetworkRuntime.remove(this);
             return;
         }
@@ -76,6 +155,7 @@ public final class SmartLogic extends PatternProviderLogic {
     }
 
     public void rebuild(ServerLevel level) {
+        if (!operational()) return;
         var grid = getGrid();
         if (grid == null) return;
         machines = new MachineRegistry(grid);
@@ -88,12 +168,15 @@ public final class SmartLogic extends PatternProviderLogic {
         rememberedComponents.addAll(components);
         var catalog = RecipeCatalog.get(level, components);
         var goals = new LinkedHashMap<AEKey, Strategy>();
-        for (var seed : getPatternInv()) {
+        for (int slot = 0; slot < getPatternInv().size(); slot++) {
+            var seed = getPatternInv().getStackInSlot(slot);
             if (!(seed.getItem() instanceof SmartPatternItem)) continue;
             var target = SmartPatternItem.target(seed);
             if (target != null) goals.put(target, SmartPatternItem.strategy(seed));
         }
         var generated = new LinkedHashMap<AEItemKey, Blueprint>();
+        var installed = dev.aesi.recipe.LearningDatasets.capabilities(installedModules());
+        var locked = new TreeSet<String>();
         var recipeModels = new LinkedHashMap<String, Recipe<AEKey>>();
         var patterns = new LinkedHashMap<String, IPatternDetails>();
         var reasons = new LinkedHashSet<String>();
@@ -134,6 +217,12 @@ public final class SmartLogic extends PatternProviderLogic {
             var output = queue.removeFirst();
             if (!visited.add(output)) continue;
             for (var blueprint : catalog.forOutput(output)) {
+                if(!ModuleAccess.allows(installed,blueprint.family(),blueprint.requiredEu())) {
+                    var missing=dev.aesi.recipe.LearningDatasets.missing(blueprint.family(),blueprint.requiredEu());
+                    locked.add(missing);
+                    if(reasons.size()<100)reasons.add(blueprint.id()+": requires process dataset "+missing);
+                    continue;
+                }
                 var slots = machines.slots(blueprint);
                 if (slots.isEmpty()) {
                     if (reasons.size() < 100)
@@ -167,6 +256,7 @@ public final class SmartLogic extends PatternProviderLogic {
         boolean changed = !updated.equals(offered);
         offered = updated;
         diagnostics = List.copyOf(reasons);
+        missingModules = Set.copyOf(locked);
         NetworkRuntime.publish(
                 this,
                 grid,
@@ -180,12 +270,13 @@ public final class SmartLogic extends PatternProviderLogic {
 
     @Override
     public List<IPatternDetails> getAvailablePatterns() {
-        return offered == null ? List.of() : offered;
+        return offered == null || !operational() ? List.of() : offered;
     }
 
     @Override
     public void writeToNBT(net.minecraft.world.level.storage.ValueOutput output) {
         super.writeToNBT(output);
+        disks.drives().writeToNBT(output, "aesi_disks");
         output.store(
                 "aesi_component_inputs",
                 GenericStack.CODEC.listOf(),
@@ -195,6 +286,9 @@ public final class SmartLogic extends PatternProviderLogic {
     @Override
     public void readFromNBT(net.minecraft.world.level.storage.ValueInput input) {
         super.readFromNBT(input);
+        disks.drives().clear();
+        disks.drives().readFromNBT(input, "aesi_disks");
+        disks.reload();
         rememberedComponents.clear();
         input.read("aesi_component_inputs", GenericStack.CODEC.listOf()).orElse(List.of()).stream()
                 .limit(256)
@@ -204,18 +298,21 @@ public final class SmartLogic extends PatternProviderLogic {
 
     @Override
     public boolean isBusy() {
-        return false;
+        return !operational();
     }
 
     @Override
     public boolean pushPattern(IPatternDetails pattern, KeyCounter[] inputs) {
-        if (!node.isActive()
+        if (!operational()
+                || !(owner.getBlockEntity() instanceof SmartController controller) || !controller.canDispatch()
                 || machines == null
                 || getCraftingLockedReason() != LockCraftingMode.NONE) return false;
         if (getConfigManager().getSetting(appeng.api.config.Settings.LOCK_CRAFTING_MODE)
                 == LockCraftingMode.LOCK_UNTIL_RESULT) return false;
         var recipe = blueprints.get(pattern.getDefinition());
         if (recipe == null || !recipe.pattern().equals(pattern)) return false;
+        // Recheck the physical inventory at dispatch. An old CPU plan never bypasses a removed component.
+        if (!ModuleAccess.allows(dev.aesi.recipe.LearningDatasets.capabilities(installedModules()),recipe.family(),recipe.requiredEu())) return false;
         var endpoints = machines.endpoints(recipe);
         if (endpoints.isEmpty()) return false;
         // Reallocate only between machines capable of the exact same stable input/output contract.
@@ -231,6 +328,7 @@ public final class SmartLogic extends PatternProviderLogic {
                                 : DispatchBridge.push(
                                         endpoint.provider(), endpoint.direction(), pattern, inputs);
                 if (accepted) {
+                    workingUntil=owner.getBlockEntity().getLevel().getGameTime()+40;
                     cursor = start + i + 1;
                     ((ProviderAccess) (Object) this).aesiOnPushSuccess(pattern);
                     return true;

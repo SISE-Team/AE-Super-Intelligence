@@ -17,7 +17,7 @@ import net.minecraft.world.level.Level;
 import java.util.List;
 import java.util.function.Consumer;
 
-public final class SmartPatternItem extends Item {
+public final class SmartPatternItem extends Item implements appeng.api.implementations.menuobjects.IMenuItem {
     public SmartPatternItem(Properties properties) {
         super(properties);
     }
@@ -42,7 +42,7 @@ public final class SmartPatternItem extends Item {
         stack.set(
                 DataComponents.CONTAINER,
                 ItemContainerContents.fromItems(List.of(target.copyWithCount(1))));
-        var tag = new CompoundTag();
+        var tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
         tag.putString("aesi_strategy", strategy.name());
         tag.putString("aesi_schema", "1");
         stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
@@ -81,10 +81,16 @@ public final class SmartPatternItem extends Item {
                     player.sendOverlayMessage(
                             Component.translatable(
                                     "message.aesi.encoded", resource.what().getDisplayName()));
-                } else player.sendOverlayMessage(Component.translatable("message.aesi.sample"));
+                } else appeng.menu.MenuOpener.open(dev.aesi.Aesi.SMART_PATTERN_MENU.get(),player,
+                        appeng.menu.locator.MenuLocators.forHand(player,hand));
             }
         }
         return InteractionResult.SUCCESS;
+    }
+
+    @Override public appeng.api.implementations.menuobjects.ItemMenuHost<?> getMenuHost(Player player,
+            appeng.menu.locator.ItemMenuHostLocator locator,net.minecraft.world.phys.BlockHitResult hit) {
+        return new appeng.api.implementations.menuobjects.ItemMenuHost<>(this,player,locator);
     }
 
     @Override

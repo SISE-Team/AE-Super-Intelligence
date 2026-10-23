@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "type": "modern_industrialization:assembler",
+  "duration": 400,
+  "eu": 8,
+  "item_inputs": [
+    {
+      "ingredient": "aesi:dataset_mi_assembler_unwritten",
+      "amount": 1
+    }
+  ],
+  "item_outputs": [
+    {
+      "id": "aesi:dataset_mi_assembler",
+      "amount": 1
+    }
+  ]
+}

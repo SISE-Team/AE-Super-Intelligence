@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "ingredient": "aesi:dataset_minecraft_smoking_unwritten",
+  "result": {
+    "id": "aesi:dataset_minecraft_smoking"
+  },
+  "experience": 0,
+  "cookingtime": 200
+}

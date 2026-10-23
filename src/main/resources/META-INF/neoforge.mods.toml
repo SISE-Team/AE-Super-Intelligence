@@ -3,7 +3,7 @@ loaderVersion="[10,)"
 license="MIT"
 [[mods]]
 modId="aesi"
-version="0.2.0-beta"
+version="0.3.0-beta"
 displayName="AE Super Intelligence"
 authors="AESI contributors"
 description="Machine-aware intelligent patterns using native AE2 terminals and crafting CPUs."

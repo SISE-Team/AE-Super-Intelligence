@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_minecraft_crafting",
+    "aesi:dataset_minecraft_smelting",
+    "aesi:dataset_minecraft_blasting",
+    "aesi:dataset_minecraft_smoking",
+    "minecraft:diamond"
+  ],
+  "result": {
+    "id": "aesi:dataset_minecraft_suite_unwritten"
+  }
+}

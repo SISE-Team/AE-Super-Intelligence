@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:dataset_minecraft_crafting_unwritten",
+    "minecraft:book"
+  ],
+  "result": {
+    "id": "aesi:dataset_minecraft_crafting"
+  }
+}

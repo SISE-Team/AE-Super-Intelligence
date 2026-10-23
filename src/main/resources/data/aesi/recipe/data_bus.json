@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IGI",
+    "RCR",
+    "IGI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "G": "minecraft:glass",
+    "R": "minecraft:redstone",
+    "C": "ae2:fluix_crystal"
+  },
+  "result": {
+    "id": "aesi:data_bus",
+    "count": 2
+  }
+}

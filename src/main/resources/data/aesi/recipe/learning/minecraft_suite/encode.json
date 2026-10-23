@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": "aesi:dataset_minecraft_suite_unwritten",
+  "result": {
+    "id": "aesi:dataset_minecraft_suite"
+  },
+  "experience": 0,
+  "cookingtime": 200
+}

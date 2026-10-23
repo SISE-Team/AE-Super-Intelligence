@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_mek_crushing",
+    "aesi:dataset_mek_enriching",
+    "aesi:dataset_mek_combining",
+    "aesi:dataset_mek_metallurgic_infusing",
+    "aesi:dataset_mek_compressing",
+    "mekanism:advanced_control_circuit"
+  ],
+  "result": {
+    "id": "aesi:dataset_mek_basic_suite_unwritten"
+  }
+}

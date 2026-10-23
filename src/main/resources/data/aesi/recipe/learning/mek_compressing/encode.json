@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:compressing",
+  "item_input": {
+    "ingredient": "aesi:dataset_mek_compressing_unwritten",
+    "count": 1
+  },
+  "chemical_input": {
+    "chemical": "mekanism:osmium",
+    "amount": 100
+  },
+  "output": {
+    "id": "aesi:dataset_mek_compressing"
+  },
+  "per_tick_usage": false
+}

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ic2"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "ic2:circuit",
+    "ic2:rubber"
+  ],
+  "result": {
+    "id": "aesi:dataset_ic2_centrifuge_unwritten"
+  }
+}

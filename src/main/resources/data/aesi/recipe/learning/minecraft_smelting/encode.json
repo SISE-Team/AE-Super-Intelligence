@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": "aesi:dataset_minecraft_smelting_unwritten",
+  "result": {
+    "id": "aesi:dataset_minecraft_smelting"
+  },
+  "experience": 0,
+  "cookingtime": 200
+}

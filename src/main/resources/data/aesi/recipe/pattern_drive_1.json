@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "I I",
+    "IBI",
+    " L "
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "B": "ae2:blank_pattern",
+    "L": "ae2:logic_processor"
+  },
+  "result": {
+    "id": "aesi:pattern_drive_1",
+    "count": 1
+  }
+}

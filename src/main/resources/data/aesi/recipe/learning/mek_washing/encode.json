@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:reaction",
+  "item_input": {
+    "ingredient": "aesi:dataset_mek_washing_unwritten",
+    "count": 1
+  },
+  "fluid_input": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "chemical_input": {
+    "chemical": "mekanism:clean_copper",
+    "amount": 1000
+  },
+  "item_output": {
+    "id": "aesi:dataset_mek_washing"
+  },
+  "duration": 400
+}

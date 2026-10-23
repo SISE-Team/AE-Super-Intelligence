@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "ae2:printed_calculation_processor",
+    "ae2:printed_silicon"
+  ],
+  "result": {
+    "id": "aesi:dataset_ae2_assembly_unwritten"
+  }
+}

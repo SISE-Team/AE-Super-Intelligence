@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "APA",
+    " AB"
+  ],
+  "key": {
+    "P": "ae2:engineering_processor",
+    "A": "ae2:fluix_crystal",
+    "B": "minecraft:diamond"
+  },
+  "result": {
+    "id": "aesi:expansion_chip_4",
+    "count": 1
+  }
+}

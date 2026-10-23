@@ -1,0 +1,27 @@
+{
+  "includes": [
+    "../common/common.json",
+    "../common/player_inventory.json"
+  ],
+  "generatedBackground": {
+    "width": 176,
+    "height": 180
+  },
+  "slots": {
+    "AESI_ARRAY_DRIVES": {
+      "left": 71,
+      "top": 26,
+      "grid": "BREAK_AFTER_2COLS"
+    }
+  },
+  "text": {
+    "dialog_title": {
+      "text": { "translate": "item.aesi.pattern_disk" },
+      "position": { "left": 8, "top": 6 }
+    },
+    "used": {
+      "text": { "translate": "gui.aesi.drive_used" },
+      "position": { "left": 8, "top": 70 }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "includes": [
+    "../common/common.json",
+    "../common/player_inventory.json"
+  ],
+  "generatedBackground": {
+    "width": 176,
+    "height": 196
+  },
+  "slots": {
+    "AESI_DRIVE_PATTERNS": {
+      "left": 8,
+      "top": 32,
+      "grid": "BREAK_AFTER_9COLS"
+    }
+  },
+  "text": {
+    "dialog_title": {
+      "text": {
+        "translate": "item.aesi.pattern_drive_1"
+      },
+      "position": {
+        "left": 8,
+        "top": 6
+      }
+    },
+    "used": {
+      "text": {
+        "translate": "gui.aesi.drive_used"
+      },
+      "position": {
+        "left": 8,
+        "top": 20
+      }
+    },
+    "page": {
+      "text": {
+        "text": "1/1"
+      },
+      "position": {
+        "left": 134,
+        "top": 9
+      }
+    }
+  }
+}

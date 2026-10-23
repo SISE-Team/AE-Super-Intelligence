@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ic2"
+    }
+  ],
+  "type": "ic2:ore_washer",
+  "ingredient": {
+    "item": "aesi:dataset_ic2_ore_washer_unwritten"
+  },
+  "result": {
+    "item": "aesi:dataset_ic2_ore_washer"
+  },
+  "amount": 1000
+}

@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_ori_assembler",
+    "aesi:dataset_ori_pulverizer",
+    "aesi:dataset_ori_foundry",
+    "aesi:dataset_ori_refinery",
+    "aesi:dataset_ori_centrifuge",
+    "oritech:processing_unit"
+  ],
+  "result": {
+    "id": "aesi:dataset_ori_process_group_1_unwritten"
+  }
+}

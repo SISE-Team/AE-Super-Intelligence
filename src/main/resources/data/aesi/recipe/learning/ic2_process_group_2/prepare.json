@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ic2"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "aesi:dataset_ic2_metal_former_cutting",
+    "aesi:dataset_ic2_metal_former_extruding",
+    "aesi:dataset_ic2_metal_former_rolling",
+    "ic2:circuit"
+  ],
+  "result": {
+    "id": "aesi:dataset_ic2_process_group_2_unwritten"
+  }
+}

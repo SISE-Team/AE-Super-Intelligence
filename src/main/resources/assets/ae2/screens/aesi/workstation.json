@@ -1,0 +1,122 @@
+{
+  "includes": [
+    "../common/common.json",
+    "../common/player_inventory.json"
+  ],
+  "generatedBackground": {
+    "width": 272,
+    "height": 298
+  },
+  "slots": {
+    "AESI_DISK": {
+      "left": 188,
+      "top": 66,
+      "grid": "VERTICAL"
+    },
+    "AESI_DISK_1": {
+      "left": 206,
+      "top": 66,
+      "grid": "VERTICAL"
+    },
+    "AESI_DISK_2": {
+      "left": 224,
+      "top": 66,
+      "grid": "VERTICAL"
+    },
+    "AESI_DISK_3": {
+      "left": 242,
+      "top": 66,
+      "grid": "VERTICAL"
+    },
+    "AESI_PATTERN_PAGE_0": {
+      "left": 8,
+      "top": 66,
+      "grid": "BREAK_AFTER_9COLS"
+    },
+    "STORAGE": {
+      "left": 8,
+      "top": 178,
+      "grid": "HORIZONTAL"
+    },
+    "AESI_MODULE_ROW_0": {
+      "left": 8,
+      "top": 66,
+      "grid": "HORIZONTAL"
+    },
+    "AESI_MODULE_ROW_1": {
+      "left": 8,
+      "top": 102,
+      "grid": "HORIZONTAL"
+    },
+    "AESI_MODULE_ROW_2": {
+      "left": 8,
+      "top": 138,
+      "grid": "HORIZONTAL"
+    }
+  },
+  "text": {
+    "dialog_title": {
+      "text": {
+        "translate": "block.aesi.smart_controller"
+      },
+      "position": {
+        "left": 8,
+        "top": 6
+      }
+    },
+    "modules": {
+      "text": {
+        "translate": "gui.aesi.disks"
+      },
+      "position": {
+        "left": 188,
+        "top": 52
+      }
+    },
+    "disk_count": {
+      "text": {
+        "translate": "gui.aesi.disks_installed"
+      },
+      "position": {
+        "left": 188,
+        "top": 34
+      }
+    },
+    "page": {
+      "text": {
+        "translate": "gui.aesi.page"
+      },
+      "position": {
+        "left": 38,
+        "top": 36
+      }
+    },
+    "capacity": {
+      "text": {
+        "translate": "gui.aesi.capacity"
+      },
+      "position": {
+        "left": 8,
+        "top": 54
+      }
+    },
+    "returns": {
+      "text": {
+        "translate": "gui.ae2.ReturnInventory"
+      },
+      "position": {
+        "left": 8,
+        "top": 166
+      }
+    },
+    "active_tab": {
+      "position": {
+        "left": 8,
+        "top": 18
+      },
+      "text": {
+        "translate": "gui.aesi.patterns_tab"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "aesi:smart_controller",
+    "aesi:structural_casing",
+    "aesi:strategy_array",
+    "aesi:data_bus",
+    "aesi:planning_core",
+    "aesi:network_port",
+    "aesi:cooling_unit",
+    "aesi:disk_array",
+    "aesi:array_rack"
+  ]
+}

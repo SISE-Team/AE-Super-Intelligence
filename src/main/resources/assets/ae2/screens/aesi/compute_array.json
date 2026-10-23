@@ -1,0 +1,37 @@
+{
+  "includes": [
+    "../common/common.json",
+    "../common/player_inventory.json"
+  ],
+  "generatedBackground": {
+    "width": 176,
+    "height": 180
+  },
+  "slots": {
+    "AESI_COMPUTE_MODULES": {
+      "left": 53,
+      "top": 40,
+      "grid": "HORIZONTAL"
+    }
+  },
+  "text": {
+    "dialog_title": {
+      "text": {
+        "translate": "block.aesi.strategy_array"
+      },
+      "position": {
+        "left": 8,
+        "top": 6
+      }
+    },
+    "hint": {
+      "text": {
+        "translate": "gui.aesi.compute_hint"
+      },
+      "position": {
+        "left": 8,
+        "top": 22
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:assembler",
+  "itemInputs": [
+    "aesi:dataset_ori_complete_suite_unwritten"
+  ],
+  "itemResults": [
+    {
+      "id": "aesi:dataset_ori_complete_suite"
+    }
+  ],
+  "time": 400
+}

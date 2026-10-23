@@ -1,0 +1,12 @@
+{
+  "type": "ae2:inscriber",
+  "ingredients": {
+    "top": "ae2:calculation_processor",
+    "middle": "aesi:dataset_ae2_assembly_unwritten",
+    "bottom": "ae2:engineering_processor"
+  },
+  "mode": "press",
+  "result": {
+    "id": "aesi:dataset_ae2_assembly"
+  }
+}

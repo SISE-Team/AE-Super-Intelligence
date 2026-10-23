@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:injecting",
+  "item_input": {
+    "ingredient": "aesi:dataset_mek_injecting_unwritten",
+    "count": 1
+  },
+  "chemical_input": {
+    "chemical": "mekanism:hydrogen_chloride",
+    "amount": 100
+  },
+  "output": {
+    "id": "aesi:dataset_mek_injecting"
+  },
+  "per_tick_usage": false
+}

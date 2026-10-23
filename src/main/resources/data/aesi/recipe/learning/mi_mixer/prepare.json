@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "modern_industrialization"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "aesi:blank_module",
+    "ae2:blank_pattern",
+    "modern_industrialization:electronic_circuit",
+    "modern_industrialization:steel_plate"
+  ],
+  "result": {
+    "id": "aesi:dataset_mi_mixer_unwritten"
+  }
+}

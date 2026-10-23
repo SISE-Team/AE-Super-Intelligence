@@ -1,0 +1,1152 @@
+{
+  "parent": "minecraft:block/block",
+  "render_type": "solid",
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "aesi:block/workstation/casing",
+    "casing": "aesi:block/workstation/casing",
+    "drive": "aesi:block/workstation/drive",
+    "gpu": "aesi:block/workstation/gpu",
+    "frame": "aesi:block/workstation/frame",
+    "end": "aesi:block/workstation/end",
+    "coolant": "aesi:block/workstation/coolant",
+    "core": "aesi:block/workstation/core",
+    "trim": "aesi:block/workstation/trim"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        15,
+        0.0
+      ],
+      "to": [
+        16,
+        16,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.3,
+            0.3,
+            2.7,
+            0.7
+          ],
+          "texture": "#casing",
+          "neoforge_data": {
+            "block_light": 0,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        15,
+        0,
+        0.0
+      ],
+      "to": [
+        16,
+        15,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.3,
+            0.3,
+            2.7,
+            0.7
+          ],
+          "texture": "#casing",
+          "neoforge_data": {
+            "block_light": 0,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        14,
+        14,
+        0.0
+      ],
+      "to": [
+        15,
+        15,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        14,
+        0.0
+      ],
+      "to": [
+        14,
+        15,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.3,
+            5.3,
+            5.7,
+            5.7
+          ],
+          "texture": "#gpu",
+          "neoforge_data": {
+            "block_light": 0,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        1,
+        14,
+        0.0
+      ],
+      "to": [
+        2,
+        15,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        0.0
+      ],
+      "to": [
+        1,
+        15,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.3,
+            0.3,
+            2.7,
+            0.7
+          ],
+          "texture": "#casing",
+          "neoforge_data": {
+            "block_light": 0,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        14,
+        2,
+        0.0
+      ],
+      "to": [
+        15,
+        14,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.3,
+            5.3,
+            5.7,
+            5.7
+          ],
+          "texture": "#gpu",
+          "neoforge_data": {
+            "block_light": 0,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        13,
+        0.0
+      ],
+      "to": [
+        14,
+        14,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.15,
+            6.15,
+            5.35,
+            6.35
+          ],
+          "texture": "#core",
+          "neoforge_data": {
+            "block_light": 12,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        1,
+        2,
+        0.0
+      ],
+      "to": [
+        2,
+        14,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.3,
+            5.3,
+            5.7,
+            5.7
+          ],
+          "texture": "#gpu",
+          "neoforge_data": {
+            "block_light": 0,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        13,
+        2,
+        0.0
+      ],
+      "to": [
+        14,
+        13,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.15,
+            6.15,
+            5.35,
+            6.35
+          ],
+          "texture": "#core",
+          "neoforge_data": {
+            "block_light": 12,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        12,
+        0.0
+      ],
+      "to": [
+        13,
+        13,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        2,
+        0.0
+      ],
+      "to": [
+        3,
+        13,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.15,
+            6.15,
+            5.35,
+            6.35
+          ],
+          "texture": "#core",
+          "neoforge_data": {
+            "block_light": 12,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        5,
+        11,
+        0.0
+      ],
+      "to": [
+        13,
+        12,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        10,
+        0.0
+      ],
+      "to": [
+        5,
+        12,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.15,
+            4.15,
+            7.35,
+            4.35
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 15,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        11,
+        10,
+        0.0
+      ],
+      "to": [
+        13,
+        11,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        10,
+        0.0
+      ],
+      "to": [
+        11,
+        11,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        5,
+        10,
+        0.0
+      ],
+      "to": [
+        7,
+        11,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        12,
+        3,
+        0.0
+      ],
+      "to": [
+        13,
+        10,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        10,
+        9,
+        0.0
+      ],
+      "to": [
+        12,
+        10,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        8,
+        6,
+        0.0
+      ],
+      "to": [
+        10,
+        10,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.15,
+            4.15,
+            7.35,
+            4.35
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 15,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        9,
+        0.0
+      ],
+      "to": [
+        8,
+        10,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        9,
+        0.0
+      ],
+      "to": [
+        6,
+        10,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        11,
+        6,
+        0.0
+      ],
+      "to": [
+        12,
+        9,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        10,
+        7,
+        0.0
+      ],
+      "to": [
+        11,
+        9,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.15,
+            4.15,
+            7.35,
+            4.35
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 15,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        7,
+        0.0
+      ],
+      "to": [
+        8,
+        9,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7.15,
+            4.15,
+            7.35,
+            4.35
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 15,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        6,
+        0.0
+      ],
+      "to": [
+        7,
+        9,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        5,
+        3,
+        0.0
+      ],
+      "to": [
+        6,
+        9,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        7,
+        0.0
+      ],
+      "to": [
+        5,
+        9,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        10,
+        5,
+        0.0
+      ],
+      "to": [
+        11,
+        7,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        5,
+        0.0
+      ],
+      "to": [
+        8,
+        7,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        6,
+        0.0
+      ],
+      "to": [
+        5,
+        7,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        11,
+        3,
+        0.0
+      ],
+      "to": [
+        12,
+        6,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        8,
+        5,
+        0.0
+      ],
+      "to": [
+        10,
+        6,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        3,
+        0.0
+      ],
+      "to": [
+        7,
+        6,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        4,
+        0.0
+      ],
+      "to": [
+        5,
+        6,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            11.65,
+            6.65,
+            11.85,
+            6.85
+          ],
+          "texture": "#drive",
+          "neoforge_data": {
+            "block_light": 12,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        3,
+        0.0
+      ],
+      "to": [
+        11,
+        5,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        3,
+        0.0
+      ],
+      "to": [
+        5,
+        4,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 13,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        3,
+        2,
+        0.0
+      ],
+      "to": [
+        13,
+        3,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.15,
+            6.15,
+            5.35,
+            6.35
+          ],
+          "texture": "#core",
+          "neoforge_data": {
+            "block_light": 12,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        14,
+        1,
+        0.0
+      ],
+      "to": [
+        15,
+        2,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        1,
+        0.0
+      ],
+      "to": [
+        14,
+        2,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5.3,
+            5.3,
+            5.7,
+            5.7
+          ],
+          "texture": "#gpu",
+          "neoforge_data": {
+            "block_light": 0,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        1,
+        1,
+        0.0
+      ],
+      "to": [
+        2,
+        2,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6.65,
+            10.65,
+            6.85,
+            10.85
+          ],
+          "texture": "#coolant",
+          "neoforge_data": {
+            "block_light": 14,
+            "sky_light": 15
+          }
+        }
+      }
+    },
+    {
+      "from": [
+        1,
+        0,
+        0.0
+      ],
+      "to": [
+        15,
+        1,
+        0.04
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.3,
+            0.3,
+            2.7,
+            0.7
+          ],
+          "texture": "#casing",
+          "neoforge_data": {
+            "block_light": 0,
+            "sky_light": 15
+          }
+        }
+      }
+    }
+  ]
+}

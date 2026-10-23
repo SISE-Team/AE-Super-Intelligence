@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "minecraft_crafting",
+    "mod": "minecraft",
+    "kind": "process",
+    "station": "工作台",
+    "grants": [
+      {
+        "family": "crafting",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "minecraft:crafting_table",
+      "ae2:calculation_processor"
+    ],
+    "recipe": "aesi:learning/minecraft_crafting/encode"
+  },
+  {
+    "id": "minecraft_smelting",
+    "mod": "minecraft",
+    "kind": "process",
+    "station": "熔炼炉",
+    "grants": [
+      {
+        "family": "smelting",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "minecraft:furnace",
+      "ae2:certus_quartz_crystal"
+    ],
+    "recipe": "aesi:learning/minecraft_smelting/encode"
+  },
+  {
+    "id": "minecraft_blasting",
+    "mod": "minecraft",
+    "kind": "process",
+    "station": "高炉炉",
+    "grants": [
+      {
+        "family": "blasting",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "minecraft:blast_furnace",
+      "ae2:certus_quartz_crystal"
+    ],
+    "recipe": "aesi:learning/minecraft_blasting/encode"
+  },
+  {
+    "id": "minecraft_smoking",
+    "mod": "minecraft",
+    "kind": "process",
+    "station": "烟熏炉",
+    "grants": [
+      {
+        "family": "smoking",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "minecraft:smoker",
+      "ae2:certus_quartz_crystal"
+    ],
+    "recipe": "aesi:learning/minecraft_smoking/encode"
+  },
+  {
+    "id": "ae2_assembly",
+    "mod": "ae2",
+    "kind": "process",
+    "station": "AE 压印器",
+    "grants": [
+      {
+        "family": "crafting",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "ae2:printed_calculation_processor",
+      "ae2:printed_silicon"
+    ],
+    "recipe": "aesi:learning/ae2_assembly/encode"
+  },
+  {
+    "id": "mi_assembler",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 装配机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:assembler",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:electronic_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_assembler/encode"
+  },
+  {
+    "id": "mi_centrifuge",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 离心机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:centrifuge",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_centrifuge/encode"
+  },
+  {
+    "id": "mi_chemical_reactor",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 化学反应机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:chemical_reactor",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_chemical_reactor/encode"
+  },
+  {
+    "id": "mi_compressor",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 压缩机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:compressor",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:electronic_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_compressor/encode"
+  },
+  {
+    "id": "mi_cutting_machine",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 切割机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:cutting_machine",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:electronic_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_cutting_machine/encode"
+  },
+  {
+    "id": "mi_electrolyzer",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 电解机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:electrolyzer",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_electrolyzer/encode"
+  },
+  {
+    "id": "mi_macerator",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 研磨机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:macerator",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:electronic_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_macerator/encode"
+  },
+  {
+    "id": "mi_mixer",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 混合机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:mixer",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:electronic_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_mixer/encode"
+  },
+  {
+    "id": "mi_packer",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 打包机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:packer",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:electronic_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_packer/encode"
+  },
+  {
+    "id": "mi_polarizer",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 极化机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:polarizer",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_polarizer/encode"
+  },
+  {
+    "id": "mi_unpacker",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 拆包机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:unpacker",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:electronic_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_unpacker/encode"
+  },
+  {
+    "id": "mi_wiremill",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 线材加工机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:wiremill",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:electronic_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_wiremill/encode"
+  },
+  {
+    "id": "mi_blast_furnace",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 高炉冶炼机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:blast_furnace",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_blast_furnace/encode"
+  },
+  {
+    "id": "mi_coke_oven",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 焦炉机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:coke_oven",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:electronic_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_coke_oven/encode"
+  },
+  {
+    "id": "mi_implosion_compressor",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 爆破压缩机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:implosion_compressor",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_implosion_compressor/encode"
+  },
+  {
+    "id": "mi_quarry",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 采掘机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:quarry",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_quarry/encode"
+  },
+  {
+    "id": "mi_vacuum_freezer",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 真空冷冻机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:vacuum_freezer",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_vacuum_freezer/encode"
+  },
+  {
+    "id": "mi_heat_exchanger",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 换热机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:heat_exchanger",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_heat_exchanger/encode"
+  },
+  {
+    "id": "mi_distillery",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 蒸馏产物 → MI 装配机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:distillery",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_distillery/encode"
+  },
+  {
+    "id": "mi_distillation_tower",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 分馏产物 → MI 装配机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:distillation_tower",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_distillation_tower/encode"
+  },
+  {
+    "id": "mi_fusion_reactor",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 聚变产物 → MI 装配机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:fusion_reactor",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:quantum_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_fusion_reactor/encode"
+  },
+  {
+    "id": "mi_pressurizer",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 加压产物 → MI 装配机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:pressurizer",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_pressurizer/encode"
+  },
+  {
+    "id": "mi_oil_drilling_rig",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 钻井产物 → MI 装配机",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:oil_drilling_rig",
+        "maxEu": 512
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "modern_industrialization:digital_circuit",
+      "modern_industrialization:steel_plate"
+    ],
+    "recipe": "aesi:learning/mi_oil_drilling_rig/encode"
+  },
+  {
+    "id": "mek_crushing",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 粉碎设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:crushing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_crushing/encode"
+  },
+  {
+    "id": "mek_enriching",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 富集设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:enriching",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_enriching/encode"
+  },
+  {
+    "id": "mek_combining",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 合并设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:combining",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_combining/encode"
+  },
+  {
+    "id": "mek_metallurgic_infusing",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 冶金灌注设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:metallurgic_infusing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_metallurgic_infusing/encode"
+  },
+  {
+    "id": "mek_compressing",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 锇压缩设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:compressing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_compressing/encode"
+  },
+  {
+    "id": "mek_purifying",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 净化设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:purifying",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_purifying/encode"
+  },
+  {
+    "id": "mek_injecting",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 化学注入设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:injecting",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_injecting/encode"
+  },
+  {
+    "id": "mek_reaction",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 加压反应设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:reaction",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_reaction/encode"
+  },
+  {
+    "id": "mek_painting",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 染色设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:painting",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_painting/encode"
+  },
+  {
+    "id": "mek_nucleosynthesizing",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 反质子核合成设备",
+    "grants": [
+      {
+        "family": "mek/mekanism:nucleosynthesizing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:ultimate_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_nucleosynthesizing/encode"
+  },
+  {
+    "id": "mek_chemical_infusing",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 化学灌注产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:chemical_infusing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_chemical_infusing/encode"
+  },
+  {
+    "id": "mek_oxidizing",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 氧化产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:oxidizing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_oxidizing/encode"
+  },
+  {
+    "id": "mek_washing",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 矿浆洗涤产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:washing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_washing/encode"
+  },
+  {
+    "id": "mek_dissolution",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 化学溶解产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:dissolution",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_dissolution/encode"
+  },
+  {
+    "id": "mek_centrifuging",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 同位素离心产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:centrifuging",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:ultimate_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_centrifuging/encode"
+  },
+  {
+    "id": "mek_activating",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 中子活化产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:activating",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:ultimate_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_activating/encode"
+  },
+  {
+    "id": "mek_evaporating",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 热力蒸馏产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:evaporating",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_evaporating/encode"
+  },
+  {
+    "id": "mek_separating",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 电解分离产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:separating",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_separating/encode"
+  },
+  {
+    "id": "mek_crystallizing",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 结晶产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:crystallizing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:dust_lithium",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_crystallizing/encode"
+  },
+  {
+    "id": "mek_pigment_extracting",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 颜料提取产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:pigment_extracting",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_pigment_extracting/encode"
+  },
+  {
+    "id": "mek_pigment_mixing",
+    "mod": "mekanism",
+    "kind": "process",
+    "station": "Mekanism 颜料混合产物 → 加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:pigment_mixing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "mekanism:alloy_infused",
+      "mekanism:basic_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_pigment_mixing/encode"
+  },
+  {
+    "id": "ic2_macerator",
+    "mod": "ic2",
+    "kind": "process",
+    "station": "IC2 打粉设备",
+    "grants": [
+      {
+        "family": "ic2/ic2:macerator",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "ic2:circuit",
+      "ic2:rubber"
+    ],
+    "recipe": "aesi:learning/ic2_macerator/encode"
+  },
+  {
+    "id": "ic2_extractor",
+    "mod": "ic2",
+    "kind": "process",
+    "station": "IC2 提取设备",
+    "grants": [
+      {
+        "family": "ic2/ic2:extractor",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "ic2:circuit",
+      "ic2:rubber"
+    ],
+    "recipe": "aesi:learning/ic2_extractor/encode"
+  },
+  {
+    "id": "ic2_compressor",
+    "mod": "ic2",
+    "kind": "process",
+    "station": "IC2 压缩设备",
+    "grants": [
+      {
+        "family": "ic2/ic2:compressor",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "ic2:circuit",
+      "ic2:rubber"
+    ],
+    "recipe": "aesi:learning/ic2_compressor/encode"
+  },
+  {
+    "id": "ic2_centrifuge",
+    "mod": "ic2",
+    "kind": "process",
+    "station": "IC2 热能离心设备",
+    "grants": [
+      {
+        "family": "ic2/ic2:centrifuge",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "ic2:circuit",
+      "ic2:rubber"
+    ],
+    "recipe": "aesi:learning/ic2_centrifuge/encode"
+  },
+  {
+    "id": "ic2_ore_washer",
+    "mod": "ic2",
+    "kind": "process",
+    "station": "IC2 洗矿设备",
+    "grants": [
+      {
+        "family": "ic2/ic2:ore_washer",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "ic2:circuit",
+      "ic2:rubber"
+    ],
+    "recipe": "aesi:learning/ic2_ore_washer/encode"
+  },
+  {
+    "id": "ic2_metal_former_cutting",
+    "mod": "ic2",
+    "kind": "process",
+    "station": "IC2 金属切割设备",
+    "grants": [
+      {
+        "family": "ic2/ic2:metal_former_cutting",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "ic2:circuit",
+      "ic2:rubber"
+    ],
+    "recipe": "aesi:learning/ic2_metal_former_cutting/encode"
+  },
+  {
+    "id": "ic2_metal_former_extruding",
+    "mod": "ic2",
+    "kind": "process",
+    "station": "IC2 金属挤压设备",
+    "grants": [
+      {
+        "family": "ic2/ic2:metal_former_extruding",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "ic2:circuit",
+      "ic2:rubber"
+    ],
+    "recipe": "aesi:learning/ic2_metal_former_extruding/encode"
+  },
+  {
+    "id": "ic2_metal_former_rolling",
+    "mod": "ic2",
+    "kind": "process",
+    "station": "IC2 金属轧制设备",
+    "grants": [
+      {
+        "family": "ic2/ic2:metal_former_rolling",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "ic2:circuit",
+      "ic2:rubber"
+    ],
+    "recipe": "aesi:learning/ic2_metal_former_rolling/encode"
+  },
+  {
+    "id": "if_dissolution",
+    "mod": "industrialforegoing",
+    "kind": "process",
+    "station": "溶解室",
+    "grants": [
+      {
+        "family": "if/dissolution",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "industrialforegoing:plastic",
+      "industrialforegoing:machine_frame_simple"
+    ],
+    "recipe": "aesi:learning/if_dissolution/encode"
+  },
+  {
+    "id": "if_latex",
+    "mod": "industrialforegoing",
+    "kind": "process",
+    "station": "乳胶处理产物 → 溶解室",
+    "grants": [
+      {
+        "family": "if/latex",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "industrialforegoing:dryrubber",
+      "industrialforegoing:plastic"
+    ],
+    "recipe": "aesi:learning/if_latex/encode"
+  },
+  {
+    "id": "eio_alloy_smelting",
+    "mod": "enderio",
+    "kind": "process",
+    "station": "Ender IO 合金熔炼设备",
+    "grants": [
+      {
+        "family": "eio/alloy",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "enderio:basic_capacitor",
+      "enderio:energetic_alloy_ingot"
+    ],
+    "recipe": "aesi:learning/eio_alloy_smelting/encode"
+  },
+  {
+    "id": "eio_sag_milling",
+    "mod": "enderio",
+    "kind": "process",
+    "station": "Ender IO SAG 研磨设备",
+    "grants": [
+      {
+        "family": "eio/sag",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "enderio:basic_capacitor",
+      "enderio:energetic_alloy_ingot"
+    ],
+    "recipe": "aesi:learning/eio_sag_milling/encode"
+  },
+  {
+    "id": "ori_assembler",
+    "mod": "oritech",
+    "kind": "process",
+    "station": "Oritech 组装设备",
+    "grants": [
+      {
+        "family": "oritech/oritech:assembler",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "oritech:processing_unit",
+      "oritech:steel_ingot"
+    ],
+    "recipe": "aesi:learning/ori_assembler/encode"
+  },
+  {
+    "id": "ori_pulverizer",
+    "mod": "oritech",
+    "kind": "process",
+    "station": "Oritech 粉碎设备",
+    "grants": [
+      {
+        "family": "oritech/oritech:pulverizer",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "oritech:processing_unit",
+      "oritech:steel_ingot"
+    ],
+    "recipe": "aesi:learning/ori_pulverizer/encode"
+  },
+  {
+    "id": "ori_foundry",
+    "mod": "oritech",
+    "kind": "process",
+    "station": "Oritech 铸造设备",
+    "grants": [
+      {
+        "family": "oritech/oritech:foundry",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "oritech:processing_unit",
+      "oritech:steel_ingot"
+    ],
+    "recipe": "aesi:learning/ori_foundry/encode"
+  },
+  {
+    "id": "ori_refinery",
+    "mod": "oritech",
+    "kind": "process",
+    "station": "Oritech 精炼设备",
+    "grants": [
+      {
+        "family": "oritech/oritech:refinery",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "oritech:processing_unit",
+      "oritech:steel_ingot"
+    ],
+    "recipe": "aesi:learning/ori_refinery/encode"
+  },
+  {
+    "id": "ori_centrifuge",
+    "mod": "oritech",
+    "kind": "process",
+    "station": "Oritech 离心设备",
+    "grants": [
+      {
+        "family": "oritech/oritech:centrifuge",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "oritech:processing_unit",
+      "oritech:steel_ingot"
+    ],
+    "recipe": "aesi:learning/ori_centrifuge/encode"
+  },
+  {
+    "id": "ori_centrifuge_fluid",
+    "mod": "oritech",
+    "kind": "process",
+    "station": "Oritech 湿法离心设备",
+    "grants": [
+      {
+        "family": "oritech/oritech:centrifuge_fluid",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "oritech:processing_unit",
+      "oritech:steel_ingot"
+    ],
+    "recipe": "aesi:learning/ori_centrifuge_fluid/encode"
+  },
+  {
+    "id": "ori_industrial_chiller",
+    "mod": "oritech",
+    "kind": "process",
+    "station": "Oritech 冷却产物与冷却机 → 组装机",
+    "grants": [
+      {
+        "family": "oritech/oritech:industrial_chiller",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "oritech:processing_unit",
+      "oritech:steel_ingot",
+      "minecraft:ice",
+      "oritech:industrial_chiller"
+    ],
+    "recipe": "aesi:learning/ori_industrial_chiller/encode"
+  },
+  {
+    "id": "minecraft_suite",
+    "mod": "minecraft",
+    "kind": "suite",
+    "station": "高炉",
+    "grants": [
+      {
+        "family": "crafting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "smelting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "blasting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "smoking",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "minecraft_crafting",
+      "minecraft_smelting",
+      "minecraft_blasting",
+      "minecraft_smoking"
+    ],
+    "ingredients": [
+      "aesi:dataset_minecraft_crafting",
+      "aesi:dataset_minecraft_smelting",
+      "aesi:dataset_minecraft_blasting",
+      "aesi:dataset_minecraft_smoking",
+      "minecraft:diamond"
+    ],
+    "recipe": "aesi:learning/minecraft_suite/encode"
+  },
+  {
+    "id": "ae2_foundation_suite",
+    "mod": "ae2",
+    "kind": "suite",
+    "station": "AE 压印器",
+    "grants": [
+      {
+        "family": "crafting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "smelting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "blasting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "smoking",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "ae2_assembly",
+      "minecraft_suite"
+    ],
+    "ingredients": [
+      "aesi:dataset_ae2_assembly",
+      "aesi:dataset_minecraft_suite",
+      "ae2:logic_processor"
+    ],
+    "recipe": "aesi:learning/ae2_foundation_suite/encode"
+  },
+  {
+    "id": "mi_basic_group_1",
+    "mod": "modern_industrialization",
+    "kind": "suite",
+    "station": "MI 装配机 32 EU/t",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:compressor",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:macerator",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:wiremill",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:cutting_machine",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:mixer",
+        "maxEu": 32
+      }
+    ],
+    "includes": [
+      "mi_compressor",
+      "mi_macerator",
+      "mi_wiremill",
+      "mi_cutting_machine",
+      "mi_mixer"
+    ],
+    "ingredients": [
+      "aesi:dataset_mi_compressor",
+      "aesi:dataset_mi_macerator",
+      "aesi:dataset_mi_wiremill",
+      "aesi:dataset_mi_cutting_machine",
+      "aesi:dataset_mi_mixer",
+      "modern_industrialization:electronic_circuit"
+    ],
+    "recipe": "aesi:learning/mi_basic_group_1/encode"
+  },
+  {
+    "id": "mi_basic_group_2",
+    "mod": "modern_industrialization",
+    "kind": "suite",
+    "station": "MI 装配机 32 EU/t",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:packer",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:unpacker",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:assembler",
+        "maxEu": 32
+      }
+    ],
+    "includes": [
+      "mi_packer",
+      "mi_unpacker",
+      "mi_assembler"
+    ],
+    "ingredients": [
+      "aesi:dataset_mi_packer",
+      "aesi:dataset_mi_unpacker",
+      "aesi:dataset_mi_assembler",
+      "modern_industrialization:electronic_circuit"
+    ],
+    "recipe": "aesi:learning/mi_basic_group_2/encode"
+  },
+  {
+    "id": "mi_furnace",
+    "mod": "modern_industrialization",
+    "kind": "process",
+    "station": "MI 装配机（熔炼协议）",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:furnace",
+        "maxEu": 32
+      }
+    ],
+    "includes": [],
+    "ingredients": [
+      "aesi:dataset_minecraft_smelting",
+      "modern_industrialization:electric_furnace"
+    ],
+    "recipe": "aesi:learning/mi_furnace/encode"
+  },
+  {
+    "id": "mi_basic_suite",
+    "mod": "modern_industrialization",
+    "kind": "suite",
+    "station": "MI 装配机 32 EU/t",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:compressor",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:macerator",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:wiremill",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:cutting_machine",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:mixer",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:packer",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:unpacker",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:assembler",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:furnace",
+        "maxEu": 32
+      }
+    ],
+    "includes": [
+      "mi_basic_group_1",
+      "mi_basic_group_2",
+      "mi_furnace"
+    ],
+    "ingredients": [
+      "aesi:dataset_mi_basic_group_1",
+      "aesi:dataset_mi_basic_group_2",
+      "aesi:dataset_mi_furnace",
+      "modern_industrialization:analog_circuit"
+    ],
+    "recipe": "aesi:learning/mi_basic_suite/encode"
+  },
+  {
+    "id": "mi_advanced_group_1",
+    "mod": "modern_industrialization",
+    "kind": "suite",
+    "station": "MI 装配机 128 EU/t",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:centrifuge",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:chemical_reactor",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:electrolyzer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:polarizer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:blast_furnace",
+        "maxEu": 512
+      }
+    ],
+    "includes": [
+      "mi_centrifuge",
+      "mi_chemical_reactor",
+      "mi_electrolyzer",
+      "mi_polarizer",
+      "mi_blast_furnace"
+    ],
+    "ingredients": [
+      "aesi:dataset_mi_centrifuge",
+      "aesi:dataset_mi_chemical_reactor",
+      "aesi:dataset_mi_electrolyzer",
+      "aesi:dataset_mi_polarizer",
+      "aesi:dataset_mi_blast_furnace",
+      "modern_industrialization:digital_circuit"
+    ],
+    "recipe": "aesi:learning/mi_advanced_group_1/encode"
+  },
+  {
+    "id": "mi_advanced_group_2",
+    "mod": "modern_industrialization",
+    "kind": "suite",
+    "station": "MI 装配机 128 EU/t",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:coke_oven",
+        "maxEu": 32
+      },
+      {
+        "family": "mi/modern_industrialization:implosion_compressor",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:quarry",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:vacuum_freezer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:heat_exchanger",
+        "maxEu": 512
+      }
+    ],
+    "includes": [
+      "mi_coke_oven",
+      "mi_implosion_compressor",
+      "mi_quarry",
+      "mi_vacuum_freezer",
+      "mi_heat_exchanger"
+    ],
+    "ingredients": [
+      "aesi:dataset_mi_coke_oven",
+      "aesi:dataset_mi_implosion_compressor",
+      "aesi:dataset_mi_quarry",
+      "aesi:dataset_mi_vacuum_freezer",
+      "aesi:dataset_mi_heat_exchanger",
+      "modern_industrialization:digital_circuit"
+    ],
+    "recipe": "aesi:learning/mi_advanced_group_2/encode"
+  },
+  {
+    "id": "mi_advanced_group_3",
+    "mod": "modern_industrialization",
+    "kind": "suite",
+    "station": "MI 装配机 128 EU/t",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:distillery",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:distillation_tower",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:pressurizer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:oil_drilling_rig",
+        "maxEu": 512
+      }
+    ],
+    "includes": [
+      "mi_distillery",
+      "mi_distillation_tower",
+      "mi_pressurizer",
+      "mi_oil_drilling_rig"
+    ],
+    "ingredients": [
+      "aesi:dataset_mi_distillery",
+      "aesi:dataset_mi_distillation_tower",
+      "aesi:dataset_mi_pressurizer",
+      "aesi:dataset_mi_oil_drilling_rig",
+      "modern_industrialization:digital_circuit"
+    ],
+    "recipe": "aesi:learning/mi_advanced_group_3/encode"
+  },
+  {
+    "id": "mi_advanced_suite",
+    "mod": "modern_industrialization",
+    "kind": "suite",
+    "station": "MI 装配机 512 EU/t",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:compressor",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:macerator",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:wiremill",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:cutting_machine",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:mixer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:packer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:unpacker",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:assembler",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:furnace",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:centrifuge",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:chemical_reactor",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:electrolyzer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:polarizer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:blast_furnace",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:coke_oven",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:implosion_compressor",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:quarry",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:vacuum_freezer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:heat_exchanger",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:distillery",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:distillation_tower",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:pressurizer",
+        "maxEu": 512
+      },
+      {
+        "family": "mi/modern_industrialization:oil_drilling_rig",
+        "maxEu": 512
+      }
+    ],
+    "includes": [
+      "mi_basic_suite",
+      "mi_advanced_group_1",
+      "mi_advanced_group_2",
+      "mi_advanced_group_3"
+    ],
+    "ingredients": [
+      "aesi:dataset_mi_basic_suite",
+      "aesi:dataset_mi_advanced_group_1",
+      "aesi:dataset_mi_advanced_group_2",
+      "aesi:dataset_mi_advanced_group_3",
+      "modern_industrialization:digital_circuit"
+    ],
+    "recipe": "aesi:learning/mi_advanced_suite/encode"
+  },
+  {
+    "id": "mi_complete_suite",
+    "mod": "modern_industrialization",
+    "kind": "suite",
+    "station": "MI 聚变产物 → 装配机 8192 EU/t",
+    "grants": [
+      {
+        "family": "mi/modern_industrialization:compressor",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:macerator",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:wiremill",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:cutting_machine",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:mixer",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:packer",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:unpacker",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:assembler",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:furnace",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:centrifuge",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:chemical_reactor",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:electrolyzer",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:polarizer",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:blast_furnace",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:coke_oven",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:implosion_compressor",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:quarry",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:vacuum_freezer",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:heat_exchanger",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:distillery",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:distillation_tower",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:pressurizer",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:oil_drilling_rig",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mi/modern_industrialization:fusion_reactor",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "mi_advanced_suite",
+      "mi_fusion_reactor"
+    ],
+    "ingredients": [
+      "aesi:dataset_mi_advanced_suite",
+      "aesi:dataset_mi_fusion_reactor",
+      "modern_industrialization:quantum_circuit"
+    ],
+    "recipe": "aesi:learning/mi_complete_suite/encode"
+  },
+  {
+    "id": "mek_basic_suite",
+    "mod": "mekanism",
+    "kind": "suite",
+    "station": "冶金灌注机",
+    "grants": [
+      {
+        "family": "mek/mekanism:crushing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:enriching",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:combining",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:metallurgic_infusing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:compressing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "mek_crushing",
+      "mek_enriching",
+      "mek_combining",
+      "mek_metallurgic_infusing",
+      "mek_compressing"
+    ],
+    "ingredients": [
+      "aesi:dataset_mek_crushing",
+      "aesi:dataset_mek_enriching",
+      "aesi:dataset_mek_combining",
+      "aesi:dataset_mek_metallurgic_infusing",
+      "aesi:dataset_mek_compressing",
+      "mekanism:advanced_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_basic_suite/encode"
+  },
+  {
+    "id": "mek_process_group_1",
+    "mod": "mekanism",
+    "kind": "suite",
+    "station": "加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:purifying",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:injecting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:reaction",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:painting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:nucleosynthesizing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "mek_purifying",
+      "mek_injecting",
+      "mek_reaction",
+      "mek_painting",
+      "mek_nucleosynthesizing"
+    ],
+    "ingredients": [
+      "aesi:dataset_mek_purifying",
+      "aesi:dataset_mek_injecting",
+      "aesi:dataset_mek_reaction",
+      "aesi:dataset_mek_painting",
+      "aesi:dataset_mek_nucleosynthesizing",
+      "mekanism:elite_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_process_group_1/encode"
+  },
+  {
+    "id": "mek_process_group_2",
+    "mod": "mekanism",
+    "kind": "suite",
+    "station": "加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:chemical_infusing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:oxidizing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:washing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:dissolution",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:centrifuging",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "mek_chemical_infusing",
+      "mek_oxidizing",
+      "mek_washing",
+      "mek_dissolution",
+      "mek_centrifuging"
+    ],
+    "ingredients": [
+      "aesi:dataset_mek_chemical_infusing",
+      "aesi:dataset_mek_oxidizing",
+      "aesi:dataset_mek_washing",
+      "aesi:dataset_mek_dissolution",
+      "aesi:dataset_mek_centrifuging",
+      "mekanism:elite_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_process_group_2/encode"
+  },
+  {
+    "id": "mek_process_group_3",
+    "mod": "mekanism",
+    "kind": "suite",
+    "station": "加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:activating",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:evaporating",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:separating",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:crystallizing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:pigment_extracting",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "mek_activating",
+      "mek_evaporating",
+      "mek_separating",
+      "mek_crystallizing",
+      "mek_pigment_extracting"
+    ],
+    "ingredients": [
+      "aesi:dataset_mek_activating",
+      "aesi:dataset_mek_evaporating",
+      "aesi:dataset_mek_separating",
+      "aesi:dataset_mek_crystallizing",
+      "aesi:dataset_mek_pigment_extracting",
+      "mekanism:elite_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_process_group_3/encode"
+  },
+  {
+    "id": "mek_process_group_4",
+    "mod": "mekanism",
+    "kind": "suite",
+    "station": "加压反应室",
+    "grants": [
+      {
+        "family": "mek/mekanism:pigment_mixing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "mek_pigment_mixing"
+    ],
+    "ingredients": [
+      "aesi:dataset_mek_pigment_mixing",
+      "mekanism:elite_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_process_group_4/encode"
+  },
+  {
+    "id": "mek_complete_suite",
+    "mod": "mekanism",
+    "kind": "suite",
+    "station": "反质子核合成器",
+    "grants": [
+      {
+        "family": "mek/mekanism:crushing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:enriching",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:combining",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:metallurgic_infusing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:compressing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:purifying",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:injecting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:reaction",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:painting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:nucleosynthesizing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:chemical_infusing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:oxidizing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:washing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:dissolution",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:centrifuging",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:activating",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:evaporating",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:separating",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:crystallizing",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:pigment_extracting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "mek/mekanism:pigment_mixing",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "mek_basic_suite",
+      "mek_process_group_1",
+      "mek_process_group_2",
+      "mek_process_group_3",
+      "mek_process_group_4"
+    ],
+    "ingredients": [
+      "aesi:dataset_mek_basic_suite",
+      "aesi:dataset_mek_process_group_1",
+      "aesi:dataset_mek_process_group_2",
+      "aesi:dataset_mek_process_group_3",
+      "aesi:dataset_mek_process_group_4",
+      "mekanism:ultimate_control_circuit"
+    ],
+    "recipe": "aesi:learning/mek_complete_suite/encode"
+  },
+  {
+    "id": "ic2_process_group_1",
+    "mod": "ic2",
+    "kind": "suite",
+    "station": "IC2 压缩机",
+    "grants": [
+      {
+        "family": "ic2/ic2:macerator",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:extractor",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:compressor",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:centrifuge",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:ore_washer",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "ic2_macerator",
+      "ic2_extractor",
+      "ic2_compressor",
+      "ic2_centrifuge",
+      "ic2_ore_washer"
+    ],
+    "ingredients": [
+      "aesi:dataset_ic2_macerator",
+      "aesi:dataset_ic2_extractor",
+      "aesi:dataset_ic2_compressor",
+      "aesi:dataset_ic2_centrifuge",
+      "aesi:dataset_ic2_ore_washer",
+      "ic2:circuit"
+    ],
+    "recipe": "aesi:learning/ic2_process_group_1/encode"
+  },
+  {
+    "id": "ic2_process_group_2",
+    "mod": "ic2",
+    "kind": "suite",
+    "station": "IC2 压缩机",
+    "grants": [
+      {
+        "family": "ic2/ic2:metal_former_cutting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:metal_former_extruding",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:metal_former_rolling",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "ic2_metal_former_cutting",
+      "ic2_metal_former_extruding",
+      "ic2_metal_former_rolling"
+    ],
+    "ingredients": [
+      "aesi:dataset_ic2_metal_former_cutting",
+      "aesi:dataset_ic2_metal_former_extruding",
+      "aesi:dataset_ic2_metal_former_rolling",
+      "ic2:circuit"
+    ],
+    "recipe": "aesi:learning/ic2_process_group_2/encode"
+  },
+  {
+    "id": "ic2_complete_suite",
+    "mod": "ic2",
+    "kind": "suite",
+    "station": "IC2 热能离心机",
+    "grants": [
+      {
+        "family": "ic2/ic2:macerator",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:extractor",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:compressor",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:centrifuge",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:ore_washer",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:metal_former_cutting",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:metal_former_extruding",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "ic2/ic2:metal_former_rolling",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "ic2_process_group_1",
+      "ic2_process_group_2"
+    ],
+    "ingredients": [
+      "aesi:dataset_ic2_process_group_1",
+      "aesi:dataset_ic2_process_group_2",
+      "ic2:advanced_circuit"
+    ],
+    "recipe": "aesi:learning/ic2_complete_suite/encode"
+  },
+  {
+    "id": "if_complete_suite",
+    "mod": "industrialforegoing",
+    "kind": "suite",
+    "station": "溶解室（以太气）",
+    "grants": [
+      {
+        "family": "if/dissolution",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "if/latex",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "if_dissolution",
+      "if_latex"
+    ],
+    "ingredients": [
+      "aesi:dataset_if_dissolution",
+      "aesi:dataset_if_latex",
+      "industrialforegoing:machine_frame_advanced"
+    ],
+    "recipe": "aesi:learning/if_complete_suite/encode"
+  },
+  {
+    "id": "eio_complete_suite",
+    "mod": "enderio",
+    "kind": "suite",
+    "station": "合金炉",
+    "grants": [
+      {
+        "family": "eio/alloy",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "eio/sag",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "eio_alloy_smelting",
+      "eio_sag_milling"
+    ],
+    "ingredients": [
+      "aesi:dataset_eio_alloy_smelting",
+      "aesi:dataset_eio_sag_milling",
+      "enderio:octadic_capacitor"
+    ],
+    "recipe": "aesi:learning/eio_complete_suite/encode"
+  },
+  {
+    "id": "ori_process_group_1",
+    "mod": "oritech",
+    "kind": "suite",
+    "station": "Oritech 组装机",
+    "grants": [
+      {
+        "family": "oritech/oritech:assembler",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:pulverizer",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:foundry",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:refinery",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:centrifuge",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "ori_assembler",
+      "ori_pulverizer",
+      "ori_foundry",
+      "ori_refinery",
+      "ori_centrifuge"
+    ],
+    "ingredients": [
+      "aesi:dataset_ori_assembler",
+      "aesi:dataset_ori_pulverizer",
+      "aesi:dataset_ori_foundry",
+      "aesi:dataset_ori_refinery",
+      "aesi:dataset_ori_centrifuge",
+      "oritech:processing_unit"
+    ],
+    "recipe": "aesi:learning/ori_process_group_1/encode"
+  },
+  {
+    "id": "ori_process_group_2",
+    "mod": "oritech",
+    "kind": "suite",
+    "station": "Oritech 组装机",
+    "grants": [
+      {
+        "family": "oritech/oritech:centrifuge_fluid",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:industrial_chiller",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "ori_centrifuge_fluid",
+      "ori_industrial_chiller"
+    ],
+    "ingredients": [
+      "aesi:dataset_ori_centrifuge_fluid",
+      "aesi:dataset_ori_industrial_chiller",
+      "oritech:processing_unit"
+    ],
+    "recipe": "aesi:learning/ori_process_group_2/encode"
+  },
+  {
+    "id": "ori_complete_suite",
+    "mod": "oritech",
+    "kind": "suite",
+    "station": "Oritech 组装机",
+    "grants": [
+      {
+        "family": "oritech/oritech:assembler",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:pulverizer",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:foundry",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:refinery",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:centrifuge",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:centrifuge_fluid",
+        "maxEu": 9223372036854775807
+      },
+      {
+        "family": "oritech/oritech:industrial_chiller",
+        "maxEu": 9223372036854775807
+      }
+    ],
+    "includes": [
+      "ori_process_group_1",
+      "ori_process_group_2"
+    ],
+    "ingredients": [
+      "aesi:dataset_ori_process_group_1",
+      "aesi:dataset_ori_process_group_2",
+      "oritech:reinforced_carbon_sheet"
+    ],
+    "recipe": "aesi:learning/ori_complete_suite/encode"
+  }
+]
